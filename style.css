@@ -60,6 +60,7 @@ header div div div{
 	padding: 10px 10px 10px 10px;
 	font-size: 0.8em;
 	border-radius: 2px;
+	border: none;
 }
 
 
@@ -89,7 +90,7 @@ header div div div{
 	font-size: 1.05em;
 }
 
-input:focus {
+input:focus, input:focus {
 	outline: none;
 }
 
@@ -98,28 +99,29 @@ input:focus {
 	justify-content: space-between;
 }
 
-#search_buttons a:hover {
+.grey_buttons:hover {
 	text-decoration-line: none;
 	color: black;
 	cursor: default;
+	border-color: #7C7C7C;
+	color: black;
 }
 
-#search_buttons div{
+.grey_buttons:active {
+	border-color: royalblue;
+}
+
+.grey_buttons{
 	margin: 30px 5px 20px 5px;
 	padding: 10px 20px 10px 20px;
 	background-color: #F3F3F3;
 	color: #7F7F7F;
 	font-size: 0.8em;
+	font-weight: bold;
 	border: solid;
 	border-width: 0.5px;
 	border-color: white;
 }
-
-#search_buttons div:hover{
-	border-color: #7C7C7C;
-	color: black;
-}
-
 
 #google_offered {
 	font-size: 0.8em;

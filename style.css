@@ -1,0 +1,33 @@
+body{
+	font-family: arial;
+}
+
+
+header{
+	display: flex;
+	justify-content: flex-end;
+}
+
+header div{
+	padding: 15px;
+}
+
+header img{
+	height: 100%;
+	padding: 15px;
+}
+
+
+.central{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo{
+	padding: 200px 0 0 0;
+}
+
+.search_bar{
+	margin: 0;
+}

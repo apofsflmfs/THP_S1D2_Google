@@ -1,20 +1,45 @@
 body{
 	font-family: arial;
+	margin: 0;
 }
 
 
-header{
+header {
 	display: flex;
+	flex-direction: row;
 	justify-content: flex-end;
 }
 
-header div{
-	padding: 15px;
+header div {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header div div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0px 20px 0px 10px;
+}
+
+header div div div{
+	padding: 5px;
+	font-size: 0.8em;
 }
 
 header img{
 	height: 100%;
 	padding: 15px;
+}
+
+.blue_buttons {
+	color: white;
+	background-color: #457bfe;
+	padding: 10px 10px 10px 10px;
+	font-size: 0.8em;
+	border-radius: 2px;
 }
 
 
@@ -25,7 +50,7 @@ header img{
 }
 
 #logo{
-	padding: 200px 0 0 0;
+	padding: 130px 0 30px 0;
 }
 
 #search_bar{
@@ -38,10 +63,14 @@ header img{
 }
 
 #search_bar input{
-	width: 520px;
+	width: 500px;
 	border: none;
+	padding: 10px;
+	font-size: 1.05em;
+}
 
-
+input:focus {
+	outline: none;
 }
 
 #search_buttons{
@@ -50,7 +79,7 @@ header img{
 }
 
 #search_buttons div{
-	margin: 20px 5px 20px 5px;
+	margin: 30px 5px 20px 5px;
 	padding: 10px 20px 10px 20px;
 	background-color: #F3F3F3;
 	color: #7F7F7F;
@@ -66,10 +95,15 @@ a{
 	text-decoration: none;
 }
 
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
 #privacy{
 	display: flex;
-	padding-top: 15px;
-	height: 80px;
+	height: 100px;
 	justify-content: space-between;
 	border-top: solid;
 	border-bottom: solid;
@@ -82,11 +116,59 @@ a{
 }
 
 #privacy_logo{
+	padding-top: 15px;
 	font-size: 1.5em;
 }
 
 #privacy_buttons{
 	display: flex;
-	padding: 30px;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 15px;
+}
 
+#privacy_buttons div {
+	display: flex;
+}
+
+#remind {
+	color : royalblue;
+	font-size: 0.8em;
+	padding: 10px;
+}
+
+
+#france_bar {
+	display: flex;
+	background-color: #F3F3F3;
+	color: #7F7F7F;
+	border-bottom: solid;
+	border-width: 0.5px;
+	border-color: #D8D8D8;
+	padding: 10px 0px 10px 20px;
+}
+
+#bottom {
+	display: flex;
+	justify-content: space-between;
+	background-color: #F3F3F3;
+}
+
+#bottom div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#bottom div div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.footer_buttons {
+	color: #7F7F7F;
+	padding: 10px 20px 10px 20px;
+	font-size: 0.8em;
 }

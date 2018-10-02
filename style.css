@@ -38,9 +38,20 @@ header div div div{
 	font-size: 0.8em;
 }
 
-header img{
-	height: 100%;
+#cubes{
+	height: 20px;
+	width: 20px;
 	padding: 15px;
+	background-image: url('images/square.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px;
+}
+
+#cubes:hover{
+	background-image: url('images/square black.png');
+	cursor: pointer;
+
 }
 
 .blue_buttons {
@@ -59,7 +70,7 @@ header img{
 }
 
 #logo{
-	padding: 130px 0 30px 0;
+	padding: 80px 0 30px 0;
 }
 
 #search_bar{
@@ -99,14 +110,14 @@ input:focus {
 	background-color: #F3F3F3;
 	color: #7F7F7F;
 	font-size: 0.8em;
+	border: solid;
+	border-width: 0.5px;
+	border-color: white;
 }
 
 #search_buttons div:hover{
-	border: solid;
-	border-width: 0.5px;
 	border-color: #7C7C7C;
 	color: black;
-
 }
 
 
@@ -193,7 +204,6 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
 }
 
 .footer_buttons {

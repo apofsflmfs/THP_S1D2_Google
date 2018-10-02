@@ -89,6 +89,8 @@ input:focus {
 
 #search_buttons a:hover {
 	text-decoration-line: none;
+	color: black;
+	cursor: default;
 }
 
 #search_buttons div{
@@ -98,6 +100,15 @@ input:focus {
 	color: #7F7F7F;
 	font-size: 0.8em;
 }
+
+#search_buttons div:hover{
+	border: solid;
+	border-width: 0.5px;
+	border-color: #7C7C7C;
+	color: black;
+
+}
+
 
 #google_offered {
 	font-size: 0.8em;
